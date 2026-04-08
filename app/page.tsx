@@ -51,18 +51,20 @@ export default function Home() {
   return (
     <div className="flex h-screen bg-background">
       {/* Sidebar */}
-      <aside className="w-72 bg-sidebar border-r border-sidebar-border flex flex-col hidden lg:flex">
-        <div className="p-6 border-b border-sidebar-border">
+      <aside className="w-72 bg-sidebar border-r border-sidebar-border flex flex-col hidden lg:flex overflow-hidden">
+        <div className="p-6 border-b border-sidebar-border flex-shrink-0">
           <h1 className="text-2xl font-serif font-bold text-sidebar-foreground">
             Ashtavakra Gita
           </h1>
           <p className="text-sm text-sidebar-foreground/60 mt-2">Verse Reader</p>
         </div>
-        <ChapterList
-          chapters={chapters}
-          selectedChapterId={selectedChapterId}
-          onSelectChapter={handleChapterSelect}
-        />
+        <div className="flex-1 overflow-y-auto">
+          <ChapterList
+            chapters={chapters}
+            selectedChapterId={selectedChapterId}
+            onSelectChapter={handleChapterSelect}
+          />
+        </div>
       </aside>
 
       {/* Main Content */}
