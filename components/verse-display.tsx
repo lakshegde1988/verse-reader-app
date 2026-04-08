@@ -58,11 +58,9 @@ export function VerseDisplay({
         {/* English Meaning Section */}
         <div className="meaning-section">
           <div className="meaning-label">Meaning</div>
-          <div className="prose dark:prose-invert max-w-none">
-            <p className="meaning-text whitespace-pre-line">
-              {verse.text}
-            </p>
-          </div>
+          <p className="meaning-text whitespace-pre-line">
+            {verse.text}
+          </p>
         </div>
 
         {/* Bottom Decoration */}
