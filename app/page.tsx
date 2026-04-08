@@ -56,7 +56,6 @@ export default function Home() {
           <h1 className="text-2xl font-serif font-bold text-sidebar-foreground">
             Ashtavakra Gita
           </h1>
-          <p className="text-sm text-sidebar-foreground/60 mt-2">Verse Reader</p>
         </div>
         <div className="flex-1 overflow-y-auto">
           <ChapterList
