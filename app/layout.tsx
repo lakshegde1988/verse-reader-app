@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Verse Reader - Ashtavakra Gita',
-  description: 'A serene verse reader for the Ashtavakra Gita - Explore spiritual wisdom across 20 chapters',
+  title: 'v0 App',
+  description: 'Created with v0',
   generator: 'v0.app',
   icons: {
     icon: [
